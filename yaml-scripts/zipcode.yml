@@ -1,0 +1,13 @@
+execution:
+- concurrency: 10
+  ramp-up: 10s
+  hold-for: 10s
+  scenario: zipcode
+
+scenarios:
+  zipcode:
+    data-sources:
+    - zipcode.csv
+    requests:
+    - url: https://api.openweathermap.org/data/2.5/weather?zip=${zip}&APPID=bdba9ebcdfef89b6450fbd15610f4b73
+      method: GET

@@ -1,0 +1,15 @@
+execution:
+- concurrency: 10
+  ramp-up: 10s
+  hold-for: 10s
+  scenario: latlon
+
+scenarios:
+  latlon:
+    data-sources:
+    - latlon.csv
+    requests:
+    - url: https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&APPID=bdba9ebcdfef89b6450fbd15610f4b73
+      method: GET
+included-configs:  
+    - zipcode.yml  # It will sequentially call the zipcode.yml file once this is finished

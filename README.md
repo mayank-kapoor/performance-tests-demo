@@ -9,9 +9,14 @@ Taurus Documentation Can be found here: https://gettaurus.org/docs/Index/
 ## Installation
  ```
 * git clone project : git@github.com:mayank-kapoor/performance-tests-demo.git
-#Pre-Requisites
-* Only Docker service needs to be installed and running based on the machine(mac,windows,linus)
 ```
+## Pre-Requisites
+```
+* Docker needs to be installed based on the machine(mac,windows,linux)
+
+```
+can be downloaded here : https://www.docker.com/products/docker-desktop
+
 ## RUN
 
 ```
